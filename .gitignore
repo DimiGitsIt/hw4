@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.local
+
+# Data pack (seed database + product photos) — not committed, see README for setup
+data/
+data.zip
+*.db
+*.sqlite
+*.sqlite3
+campus_customs_db.pdf
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node / frontend build output
+frontend/node_modules/
+frontend/dist/
+node_modules/

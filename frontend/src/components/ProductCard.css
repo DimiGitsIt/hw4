@@ -1,0 +1,110 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cc-white);
+  border-radius: var(--cc-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--cc-shadow);
+  transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.22s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--cc-shadow-xl);
+}
+
+.product-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.product-card__image-wrap {
+  position: relative;
+  background: var(--cc-image-bg);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.product-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-card__image-wrap img {
+  transform: scale(1.05);
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.product-card__badge--out {
+  background: var(--cc-gray-800);
+  color: var(--cc-white);
+}
+
+.product-card__badge--low {
+  background: var(--cc-gold);
+  color: var(--cc-navy);
+}
+
+.product-card__body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.product-card__name {
+  font-size: var(--fs-h3);
+  margin: 0;
+  color: var(--cc-navy);
+}
+
+.product-card__desc {
+  font-size: var(--fs-small);
+  color: var(--cc-gray-500);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.product-card__price {
+  font-family: var(--cc-font-display);
+  font-weight: 700;
+  color: var(--cc-blue-deep);
+  font-size: var(--fs-price);
+}
+
+.product-card__cta {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--cc-blue);
+  transition: transform 0.18s ease;
+}
+
+.product-card:hover .product-card__cta {
+  transform: translateX(3px);
+}

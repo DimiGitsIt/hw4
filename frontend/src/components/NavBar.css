@@ -1,0 +1,128 @@
+.navbar {
+  background: var(--cc-navy);
+  box-shadow: var(--cc-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 68px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cc-white);
+  font-family: var(--cc-font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.navbar__brand:hover {
+  opacity: 0.88;
+}
+
+.navbar__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--cc-gold);
+  color: var(--cc-navy);
+  font-family: var(--cc-font-display);
+  font-weight: 800;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.navbar__brand:hover .navbar__brand-mark {
+  transform: rotate(-6deg) scale(1.06);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.navbar__link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 4px;
+  height: 2px;
+  background: var(--cc-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.navbar__link--active::after {
+  transform: scaleX(1);
+}
+
+.navbar__link:hover {
+  color: var(--cc-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navbar__link--active {
+  color: var(--cc-white);
+  background: rgba(244, 180, 0, 0.16);
+}
+
+.navbar__auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__login {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--cc-white);
+}
+
+.navbar__greeting {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.navbar__login:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 720px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px 24px;
+  }
+
+  .navbar__links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}

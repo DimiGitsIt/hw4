@@ -1,0 +1,221 @@
+:root {
+  --cc-blue-deep: #00356b;
+  --cc-blue: #0f4c8c;
+  --cc-blue-light: #e8eff8;
+  --cc-navy: #041e42;
+  --cc-navy-deep: #020f21;
+  --cc-gold: #f4b400;
+  --cc-gold-deep: #c98f00;
+  --cc-white: #ffffff;
+  --cc-gray-100: #f5f6f8;
+  --cc-gray-150: #eef1f5;
+  --cc-gray-200: #e2e5ea;
+  --cc-gray-500: #6b7280;
+  --cc-gray-800: #1f2430;
+  --cc-image-bg: #f0ede4;
+  --cc-radius: 10px;
+  --cc-radius-lg: 16px;
+  --cc-shadow: 0 2px 10px rgba(4, 30, 66, 0.12);
+  --cc-shadow-lg: 0 12px 32px rgba(4, 30, 66, 0.18);
+  --cc-shadow-xl: 0 24px 64px rgba(2, 15, 33, 0.28);
+
+  /* Collegiate serif for headlines, clean sans for everything else — both fall back
+     to safe system fonts if the Google Fonts request fails or is slow. */
+  --cc-font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --cc-font-body: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* Type scale — one source of truth so headings, prices, and labels stay consistent. */
+  --fs-display: clamp(2.25rem, 1.7rem + 2.2vw, 3.4rem);
+  --fs-h1: clamp(1.7rem, 1.4rem + 1.2vw, 2.3rem);
+  --fs-h2: clamp(1.3rem, 1.15rem + 0.6vw, 1.6rem);
+  --fs-h3: 1.1rem;
+  --fs-body: 1rem;
+  --fs-small: 0.86rem;
+  --fs-label: 0.74rem;
+  --fs-price: 1.2rem;
+
+  color-scheme: light;
+  font-family: var(--cc-font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cc-gray-100);
+  color: var(--cc-gray-800);
+  line-height: 1.55;
+  font-size: var(--fs-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--cc-font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--cc-navy);
+  margin: 0 0 0.5em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* A short varsity-stripe flourish for section headings — the one recurring motif
+   that ties the site back to a letterman/pennant feel without borrowing any real
+   Yale art. Apply with className="varsity-kicker" next to a heading. */
+.varsity-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--cc-font-body);
+  font-weight: 800;
+  font-size: var(--fs-label);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cc-gold-deep);
+  margin-bottom: 10px;
+}
+
+.varsity-kicker::before,
+.varsity-kicker::after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cc-gold), var(--cc-gold-deep));
+  border-radius: 2px;
+}
+
+/* ---------- Buttons ---------- */
+
+.cc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--cc-radius);
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.cc-button:hover {
+  transform: translateY(-2px);
+}
+
+.cc-button:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.cc-button--primary {
+  background: var(--cc-gold);
+  color: var(--cc-navy);
+}
+
+.cc-button--primary:hover {
+  box-shadow: 0 8px 20px rgba(244, 180, 0, 0.4);
+  background: var(--cc-gold-deep);
+}
+
+.cc-button--outline {
+  background: transparent;
+  color: var(--cc-blue-deep);
+  border: 1.5px solid var(--cc-blue-deep);
+}
+
+.cc-button--outline:hover {
+  background: var(--cc-blue-light);
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes cc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cc-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cc-animate-in {
+  animation: cc-fade-up 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+.cc-page-enter {
+  animation: cc-fade-in 0.28s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

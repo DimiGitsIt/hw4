@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-10-08T03:31:39.224057+00:00",
+    "request_id": "e1e52633625e",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Basic Hoodie Big Yale",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"basic-hoodie-big-yale\",\"name\":\"Basic Hoodie Big Yale\",\"price\":68.0,\"image_url\":\"/api/images/basic-hoodie-big-yale\",\"description\":\"Navy pullover hoodie wit...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:31:44.037781+00:00",
+    "request_id": "e1e52633625e",
+    "user_id": null,
+    "tool": "get_product_price",
+    "args": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "result_summary": "{\"product_id\":\"basic-hoodie-big-yale\",\"name\":\"Basic Hoodie Big Yale\",\"price\":68.0}",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:31:45.810703+00:00",
+    "request_id": "e1e52633625e",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "completed"
+  },
+  {
+    "timestamp": "2026-10-08T03:31:48.001929+00:00",
+    "request_id": "6709e7728b7d",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "completed"
+  },
+  {
+    "timestamp": "2026-10-08T03:31:49.101512+00:00",
+    "request_id": "233c8be2568c",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "error: status_code: 400, model_name: gpt-5.6-luna, body: {'message': 'azure-openai error: The response was filtered due to the prompt triggering Azure OpenAI’s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766', 'type': 'invalid_request_error', 'param': 'prompt', 'code': 'content_filter'}"
+  },
+  {
+    "timestamp": "2026-10-08T03:31:50.526974+00:00",
+    "request_id": "33645f4470a7",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "completed"
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.664645+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Basic Hoodie Big Yale",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"basic-hoodie-big-yale\",\"name\":\"Basic Hoodie Big Yale\",\"price\":68.0,\"image_url\":\"/api/images/basic-hoodie-big-yale\",\"description\":\"Navy pullover hoodie wit...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.664881+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Branford 1 4 Zip",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"branford-1-4-zip\",\"name\":\"Branford 1 4 Zip\",\"price\":72.0,\"image_url\":\"/api/images/branford-1-4-zip\",\"description\":\"Heather gray long-sleeve quarter-zip pu...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.665025+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Champion Full Zip Hood",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"champion-full-zip-hood\",\"name\":\"Champion Full Zip Hood\",\"price\":88.0,\"image_url\":\"/api/images/champion-full-zip-hood\",\"description\":\"Charcoal gray Champio...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.665250+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Boola Boola T Shirt",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"boola-boola-t-shirt\",\"name\":\"Boola Boola T Shirt\",\"price\":32.0,\"image_url\":\"/api/images/boola-boola-t-shirt\",\"description\":\"Navy short-sleeve T-shirt feat...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.665393+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Baseball Left Chest Crewneck",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"baseball-left-chest-crewneck\",\"name\":\"Baseball Left Chest Crewneck\",\"price\":58.0,\"image_url\":\"/api/images/baseball-left-chest-crewneck\",\"description\":\"Nav...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:08.665532+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": "find_product",
+    "args": {
+      "keyword": "Crew Left Chest Hoodie",
+      "limit": 5
+    },
+    "result_summary": "{\"status\":\"found\",\"product\":{\"product_id\":\"crew-left-chest-hoodie\",\"name\":\"Crew Left Chest Hoodie\",\"price\":68.0,\"image_url\":\"/api/images/crew-left-chest-hoodie\",\"description\":\"Navy blue pullover ho...",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:11.062339+00:00",
+    "request_id": "75461690e9e7",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "usage_limit_exceeded: The next tool call(s) would exceed the tool_calls_limit of 8 (tool_calls=18). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits"
+  },
+  {
+    "timestamp": "2026-10-08T03:32:39.506225+00:00",
+    "request_id": "a93299e9f069",
+    "user_id": null,
+    "tool": "search_products",
+    "args": {
+      "keyword": "t-shirts",
+      "limit": 12
+    },
+    "result_summary": "12 result(s): 2025-yale-vs-harvard-t-shirt, benjamin-franklin-t-shirt, big-yale-tri-blend-t-shirt, boola-boola-t-shirt, district-tri-blend-t-shirt-vintage-shield",
+    "stop_reason": null
+  },
+  {
+    "timestamp": "2026-10-08T03:32:43.332957+00:00",
+    "request_id": "a93299e9f069",
+    "user_id": null,
+    "tool": null,
+    "args": {},
+    "result_summary": null,
+    "stop_reason": "usage_limit_exceeded: The next tool call(s) would exceed the tool_calls_limit of 8 (tool_calls=13). Consider raising the limit, or see the docs on usage limits for budget-aware patterns: https://pydantic.dev/docs/ai/core-concepts/agent/#usage-limits"
+  }
+]

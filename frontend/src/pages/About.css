@@ -1,0 +1,39 @@
+.about-page {
+  padding: 48px 24px 72px;
+  max-width: 880px;
+}
+
+.about-page__lede {
+  font-size: 1.1rem;
+  color: var(--cc-gray-800);
+  margin-bottom: 40px;
+}
+
+.about-page__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-page__block {
+  padding: 18px 20px;
+  border-left: 3px solid var(--cc-gold);
+  background: var(--cc-white);
+  border-radius: 0 var(--cc-radius) var(--cc-radius) 0;
+  box-shadow: var(--cc-shadow);
+  transition: transform 0.18s ease;
+}
+
+.about-page__block:hover {
+  transform: translateX(4px);
+}
+
+.about-page__block h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.about-page__block p {
+  color: var(--cc-gray-500);
+  margin: 0;
+}
